@@ -42,43 +42,43 @@ export const getServerSideProps = async(context) => {
   const activeLinks = [
     {
       url: "1",
-      hint: "This is hint for 1"
+      hint: "This is hint for 1 🇮🇳"
     },
     {
       url: "2",
-      hint: "This is hint for 2"
+      hint: "This is hint for 2 🐼"
     },
     {
       url: "3",
-      hint: "This is hint for 3"
+      hint: "This is hint for 3 🐘"
     },
     {
       url: "4",
-      hint: "This is hint for 4"
+      hint: "This is hint for 4 🦏"
     },
     {
       url: "5",
-      hint: "This is hint for 5"
+      hint: "This is hint for 5 💔"
     },
     {
       url: "6",
-      hint: "This is hint for 6"
+      hint: "This is hint for 6 🥑"
     },
     {
       url: "7",
-      hint: "This is hint for 7"
+      hint: "This is hint for 7 🍆"
     },
     {
       url: "8",
-      hint: "This is hint for 8"
+      hint: "This is hint for 8 🍑"
     },
     {
       url: "9",
-      hint: "This is hint for 9"
+      hint: "This is hint for 9 🕵🏻‍♀️"
     },
     {
       url: "10",
-      hint: "This is hint for 10"
+      hint: "This is hint for 10 🐶"
     },
   ]
 
