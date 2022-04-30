@@ -66,11 +66,11 @@ export const getServerSideProps = async(context) => {
     },
     {
       url: "7",
-      hint: "This is hint for 7 🍆"
+      hint: "This is hint for 7 🥑"
     },
     {
       url: "8",
-      hint: "This is hint for 8 🍑"
+      hint: "This is hint for 8 🥑"
     },
     {
       url: "9",
