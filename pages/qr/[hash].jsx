@@ -32,7 +32,7 @@ function qr({msg}) {
               msg.hint !== null && <p className="text-center text-white text-2xl font-extrabold">Your Clue: {msg.hint}</p>
             }
             {
-              msg.img !== null && <div className="pl-2  pr-2 w-full"> <Image className="rounded "  src={msg.img} width={100} height={100} layout="responsive" objectFit="cover" /> </div>
+              msg.img !== null && <div className="pl-2  pr-2 w-full"> <Image className="rounded "  src={msg.img} width={100} height={100} priority={true} layout="responsive" objectFit="cover" /> </div>
             }
           
           <p className="mt-9 text-center text-white text-lg font-extrabold ">QR Code Id: {msg.url}</p>
@@ -68,7 +68,7 @@ export const getServerSideProps = async(context) => {
     },
     {
       url: "5",
-      hint: "This is hint for 5 💔",
+      hint: "This is hint for 5 🦏",
       img: null
     },
     {
