@@ -38,7 +38,7 @@ function qr({msg}) {
             }
 
             {
-              msg.audio !== null && <div className='w-screen mt-5 pl-2 pr-2'><AudioPlayer src={msg.audio} preload='metadata' showJumpControls={false} showFilledVolume={false} /></div>
+              msg.audio !== null && <div className='w-screen  mt-5 pl-2 pr-2'><AudioPlayer className="!bg-gray-800 rounded" src={msg.audio} preload='metadata' showJumpControls={false} showFilledVolume={false} /></div>
             }
             
           
