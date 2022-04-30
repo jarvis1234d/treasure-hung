@@ -29,11 +29,12 @@ function qr({msg}) {
           </div>
           <div className={`${loading && 'hidden'} flex items-center flex-col`}>
             {
-              msg.hint !== null && <p className="text-center text-white text-2xl font-extrabold">Your Clue: {msg.hint}</p>
-            }
-            {
               msg.img !== null && <div className="pl-2  pr-2 w-full"> <Image className="rounded "  src={msg.img} width={100} height={100} priority={true} layout="responsive" objectFit="cover" /> </div>
             }
+            {
+              msg.hint !== null && <p className="mt-5 text-center text-white text-2xl font-extrabold">Your Clue: {msg.hint}</p>
+            }
+            
           
           <p className="mt-9 text-center text-white text-lg font-extrabold ">QR Code Id: {msg.url}</p>
           </div>
@@ -48,7 +49,7 @@ export const getServerSideProps = async(context) => {
   const activeLinks = [
     {
       url: "1",
-      hint: null,
+      hint: "Hello 🐼",
       img: "/images/Donut.png"
     },
     {
@@ -73,7 +74,7 @@ export const getServerSideProps = async(context) => {
     },
     {
       url: "6",
-      hint: null,
+      hint: "Hello 🐼",
       img: "/images/Autumn-leaves.jpg"
     },
     {
