@@ -1,5 +1,6 @@
 import Head from "next/head"
 import Image from "next/image"
+import {ChevronDownIcon} from "@heroicons/react/solid"
 
 
 function esports() {
@@ -17,7 +18,10 @@ function esports() {
                 <div>
                     <h1 className="hidden md:block text-white md:text-black tracking-widest text-center mt-[30vh] mb-5 text-2xl font-extrabold" >GAMING AT TECHNOHOLIX 2K22</h1>
                     <h1 className="text-white md:text-black tracking-widest text-center md:mt-4 mt-[30vh] mb-5 text-2xl font-extrabold">READY.<br />SET.<br />PLAY.<br /></h1>
-                   <div className="mt-[35vh] md:mt-5 md:text-black text-white">
+                   <div className="mt-[25vh] md:mt-5 md:text-black text-white">
+                       <div className="md:hidden h-10 w-10 mr-auto ml-auto">
+                           <ChevronDownIcon />
+                       </div>
                         <p className="text-center mt-9 pl-2 pr-2 text-olg font-bold">Click on the game you want to participate in.</p>
                         <div className="flex space-x-9 items-center justify-center">
                             <p className="text-center hover:cursor-pointer mt-9 mb-5 text-base font-bold"><a href="https://forms.gle/crxVPz7up9NjgdwJ7 ">BGMI</a></p>
