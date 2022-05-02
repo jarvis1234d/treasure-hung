@@ -14,7 +14,7 @@ function qr({msg}) {
     setLoading(false);
   }
 
-   setInterval(handleLoading, 5000);
+   setInterval(handleLoading, 1500);
 
 
 
