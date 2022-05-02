@@ -34,7 +34,7 @@ function qr({msg}) {
               msg.img !== null && <div className="pl-2  pr-2 w-full"> <Image className="rounded "  src={msg.img} width={100} height={100} priority={true} layout="responsive" objectFit="cover" /> </div>
             }
             {
-              msg.hint !== null && <p className="mt-5 text-center text-white text-2xl font-extrabold">Your Clue: {msg.hint}</p>
+              msg.hint !== null && <p className="mt-5 text-center text-white text-2xl font-extrabold">Your Key: {msg.hint}</p>
             }
 
             {
@@ -55,7 +55,7 @@ export const getServerSideProps = async(context) => {
   const activeLinks = [
     {
       url: "1",
-      hint: "Hello 🐼",
+      hint: "'KEY'",
       img: "/images/Donut.png",
       audio: null
     },
@@ -110,6 +110,126 @@ export const getServerSideProps = async(context) => {
     {
       url: "10",
       hint: "This is hint for 10 🐶",
+      img: null,
+      audio: null
+    },
+    {
+      url: "11",
+      hint: "This is hint for 11 🐶",
+      img: null,
+      audio: null
+    },
+    {
+      url: "12",
+      hint: "This is hint for 12 🐶",
+      img: null,
+      audio: null
+    },
+    {
+      url: "13",
+      hint: "This is hint for 13 🐶",
+      img: null,
+      audio: null
+    },
+    {
+      url: "14",
+      hint: "This is hint for 14 🐶",
+      img: null,
+      audio: null
+    },
+    {
+      url: "15",
+      hint: "This is hint for 15 🐶",
+      img: null,
+      audio: null
+    },
+    {
+      url: "16",
+      hint: "This is hint for 16 🐶",
+      img: null,
+      audio: null
+    },
+    {
+      url: "17",
+      hint: "This is hint for 17 🐶",
+      img: null,
+      audio: null
+    },
+    {
+      url: "18",
+      hint: "This is hint for 18 🐶",
+      img: null,
+      audio: null
+    },
+    {
+      url: "19",
+      hint: "This is hint for 19 🐶",
+      img: null,
+      audio: null
+    },
+    {
+      url: "20",
+      hint: "This is hint for 20 🐶",
+      img: null,
+      audio: null
+    },
+    {
+      url: "21",
+      hint: "This is hint for 21 🐶",
+      img: null,
+      audio: null
+    },
+    {
+      url: "22",
+      hint: "This is hint for 22 🐶",
+      img: null,
+      audio: null
+    },
+    {
+      url: "23",
+      hint: "This is hint for 23 🐶",
+      img: null,
+      audio: null
+    },
+    {
+      url: "24",
+      hint: "This is hint for 24 🐶",
+      img: null,
+      audio: null
+    },
+    {
+      url: "25",
+      hint: "This is hint for 25 🐶",
+      img: null,
+      audio: null
+    },
+    {
+      url: "26",
+      hint: "This is hint for 26 🐶",
+      img: null,
+      audio: null
+    },
+    {
+      url: "27",
+      hint: "This is hint for 27 🐶",
+      img: null,
+      audio: null
+    },
+    {
+      url: "28",
+      hint: "This is hint for 28 🐶",
+      img: null,
+      audio: null
+    },
+    {
+      url: "29",
+      hint: "This is hint for 29 🐶",
+      img: null,
+      audio: null
+    },
+    {
+      url: "30",
+      hint: "This is hint for 30 🐶",
       img: null,
       audio: null
     },
