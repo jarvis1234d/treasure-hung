@@ -26,7 +26,7 @@ function esports() {
                         <div className="flex space-x-9 items-center justify-center">
                             <p className="text-center hover:cursor-pointer mt-9 mb-5 text-base font-bold"><a href="https://forms.gle/crxVPz7up9NjgdwJ7 ">BGMI</a></p>
                             <p className="text-center hover:cursor-pointer mt-9 mb-5 text-base font-bold"><a href="https://forms.gle/kNFXJ1gJqx2GKhim6 ">CS 1.6</a></p>
-                            <p className="text-center hover:cursor-pointer mt-9 mb-5 text-base font-bold"><a href="https://forms.gle/crxVPz7up9NjgdwJ7 ">NFS 2005</a></p>
+                            <p className="text-center hover:cursor-pointer mt-9 mb-5 text-base font-bold"><a href="https://forms.gle/MAr9h3Dg9s1UsBDh9">NFS 2005</a></p>
                         </div>
                    </div>
                         
