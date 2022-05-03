@@ -296,7 +296,7 @@ export const getServerSideProps = async(context) => {
     },
     {
       url: "demo",
-      hint: "This is hint for 40 🐶",
+      hint: "This is Demo page",
       img: null,
       key: null,
       _for: null,
