@@ -24,7 +24,7 @@ function qr({msg}) {
         <title>Success: Treasure Hunt - SOCSE</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="">
+      <main className="w-full">
           <div className={`${!loading && 'hidden'} flex items-center flex-col`}>
             <Oval height={`3em`} fill={`transparent`} stroke={`#06bcee`} strokeWidth={36} />
             <p className="mt-5 text-[#06bcee]" >Verifying...</p>
@@ -49,9 +49,9 @@ function qr({msg}) {
             
             }
              
-          <p className="mt-9 text-center text-white text-base font-bold ">For any technical issues contact: Tarun Suryawanshi - 8308873441</p>
+          <p className="mt-9 text-center text-white text-base font-bold ">For any technical issues contact:<br /> Tarun Suryawanshi - 8308873441</p>
 
-          <div className="pl-2  pr-2 w-[150px] bottom-0 -mb-5 absolute"> <Image className=" "  src="/images/cs0.png" width={100} height={100} priority={true} layout="responsive" objectFit="cover" /> </div>
+          {/* <div className="pl-2  pr-2 w-[150px] bottom-0 -mb-5 absolute"> <Image className=" "  src="/images/cs0.png" width={100} height={100} priority={true} layout="responsive" objectFit="cover" /> </div> */}
           </div>
       </main>
 
@@ -65,9 +65,9 @@ export const getServerSideProps = async(context) => {
     {
       url: "11",
       hint: "Room ko dhoondo",
-      img: "/images/f116.jpeg",
+      img: "/images/f116.jpg",
       key: "'M'",
-      _for: "alpha1, alpha2",
+      _for: "alpha1, alpha2, sigma1, sigma2",
       audio: null
     },
     {
@@ -75,7 +75,7 @@ export const getServerSideProps = async(context) => {
       hint: "S-128 ke samne hai khamba, khambe ka hi toh hai saara funda",
       img: null,
       key: "'E'",
-      _for: "alpha1, alpha2",
+      _for: "alpha1, alpha2, sigma1, sigma2",
       audio: null
     },
     {
@@ -83,7 +83,7 @@ export const getServerSideProps = async(context) => {
       hint: "Abhi seedha first floor pe jao, dhoondo waha hardware lab, jike side me chupa hai last clue ka rap.",
       img: null,
       key: "'V'",
-      _for: "alpha1, alpha2",
+      _for: "alpha1, alpha2, sigma1, sigma2",
       audio: null
     },
     {
@@ -91,201 +91,201 @@ export const getServerSideProps = async(context) => {
       hint: null,
       img: null,
       key: "'T'",
-      _for: "alpha1, alpha2,",
+      _for: "alpha1, alpha2, sigma1, sigma2",
       audio: "/audio/sherayasher.wav"
     },
     {
       url: "15",
-      hint: "This is hint for 15 🐶",
+      hint: "Dean office on second floor, O building",
       img: null,
-      key: null,
-      _for: null,
+      key: "'Y'",
+      _for: "Beta1, Beta2",
       audio: null
     },
     {
       url: "16",
-      hint: "This is hint for 16 🐶",
+      hint: "Ha bhai aa gaye, ab jao S-126 ke saamne notice board ke niche dekhle, clue mila toh aage badhle",
       img: null,
-      key: null,
-      _for: null,
+      key: "'D'",
+      _for: "Beta1, Beta2",
       audio: null
     },
     {
       url: "17",
-      hint: "This is hint for 17 🐶",
+      hint: "When its hot you come towards me, and get water bottles filled, I am permanent resident on first floor",
       img: null,
-      key: null,
-      _for: null,
+      key: "'V'",
+      _for: "Beta1, Beta2",
       audio: null
     },
     {
       url: "18",
-      hint: "This is hint for 18 🐶",
+      hint: null,
       img: null,
-      key: null,
-      _for: null,
-      audio: null
+      key: "'H'",
+      _for: "Beta1, Beta2",
+      audio: "/audio/sherayasher.wav"
     },
     {
       url: "19",
-      hint: "This is hint for 19 🐶",
-      img: null,
-      key: null,
-      _for: null,
+      hint: "MBA wali didi jo aapko roz dekhti hai (poster).",
+      img: "/images/mba.jpg",
+      key: "'V'",
+      _for: "Gamma1, Gamma2",
       audio: null
     },
     {
       url: "20",
-      hint: "This is hint for 20 🐶",
+      hint: "Woh bhagta hai par chalta nahi, vo gata hai par bolta nahi, wo tower hai jiske do hath aur ek chehra par sar nahi. ",
       img: null,
-      key: null,
-      _for: null,
+      key: "'W'",
+      _for: "Gamma1, Gamma2",
       audio: null
     },
     {
       url: "21",
-      hint: "This is hint for 21 🐶",
+      hint: "Wo fudakta hai lambi challang marta hai, real life mei yeh kida piddi sa hai par saala O building ke bahar itna bada kaise hai.",
       img: null,
-      key: null,
-      _for: null,
+      key: "'H'",
+      _for: "Gamma1, Gamma2, Sigma1, Sigma2",
       audio: null
     },
     {
       url: "22",
-      hint: "This is hint for 22 🐶",
+      hint: null,
       img: null,
-      key: null,
-      _for: null,
-      audio: null
+      key: "'H'",
+      _for: "Gamma1, Gamma2, Sigma1, Sigma2",
+      audio: "/audio/sherayasher.wav"
     },
     {
       url: "23",
-      hint: "This is hint for 23 🐶",
-      img: null,
-      key: null,
-      _for: null,
+      hint: null,
+      img: "/images/f118.jpg",
+      key: "'Z'",
+      _for: "Delta1, Delta2",
       audio: null
     },
     {
       url: "24",
-      hint: "This is hint for 24 🐶",
+      hint: "O building reception par jao aur mam ko bolo 'Bad Morning'",
       img: null,
-      key: null,
-      _for: null,
+      key: "'E'",
+      _for: "Delta1, Delta2",
       audio: null
     },
     {
       url: "25",
-      hint: "This is hint for 25 🐶",
-      img: null,
-      key: null,
-      _for: null,
+      hint: null,
+      img: "/images/lawn.jpg",
+      key: "'A'",
+      _for: "Delta1, Delta2",
       audio: null
     },
     {
       url: "26",
-      hint: "This is hint for 26 🐶",
+      hint: null,
       img: null,
-      key: null,
-      _for: null,
-      audio: null
+      key: "'V",
+      _for: "Delta1, Delta2, Mu1, Mu2",
+      audio: "/audio/sherayasher.wav"
     },
     {
       url: "27",
-      hint: "This is hint for 27 🐶",
+      hint: "Ek kaam karo, O building ground floor pe jake, Reception ki mam ko bolo 'May I help you Mam'",
       img: null,
-      key: null,
-      _for: null,
+      key: "'A'",
+      _for: "Sigma1, Sigma2",
       audio: null
     },
     {
       url: "28",
-      hint: "This is hint for 28 🐶",
+      hint: "Woh bhagta hai par chalta nahi, vo gata hai par bolta nahi, wo tower hai jiske do hath aur ek chehra par sar nahi. ",
       img: null,
-      key: null,
-      _for: null,
+      key: "'F'",
+      _for: "Sigma1, Sigma2",
       audio: null
     },
     {
       url: "29",
-      hint: "This is hint for 29 🐶",
-      img: null,
-      key: null,
-      _for: null,
+      hint: null,
+      img: "/images/kaby.jpg",
+      key: "'X'",
+      _for: "Mu1, Mu2",
       audio: null
     },
     {
       url: "30",
-      hint: "This is hint for 30 🐶",
+      hint: "Ek kam karo O building ke reception par jakar mam ko bolo, 'Mam Bhuk lagi hai.'",
       img: null,
-      key: null,
-      _for: null,
+      key: "'W'",
+      _for: "Mu1, Mu2",
       audio: null
     },
     {
       url: "31",
-      hint: "This is hint for 30 🐶",
-      img: null,
-      key: null,
-      _for: null,
+      hint: null,
+      img: "images/lawn.jpg",
+      key: "'M'",
+      _for: "Mu1, Mu2",
       audio: null
     },
-    {
-      url: "32",
-      hint: "This is hint for 32 🐶",
-      img: null,
-      key: null,
-      _for: null,
-      audio: null
-    },
-    {
-      url: "33",
-      hint: "This is hint for 33 🐶",
-      img: null,
-      key: null,
-      _for: null,
-      audio: null
-    },
-    {
-      url: "34",
-      hint: "This is hint for 34 🐶",
-      img: null,
-      key: null,
-      _for: null,
-      audio: null
-    },
-    {
-      url: "35",
-      hint: "This is hint for 35 🐶",
-      img: null,
-      key: null,
-      _for: null,
-      audio: null
-    },
-    {
-      url: "36",
-      hint: "This is hint for 36 🐶",
-      img: null,
-      key: null,
-      _for: null,
-      audio: null
-    },
-    {
-      url: "37",
-      hint: "This is hint for 37 🐶",
-      img: null,
-      key: null,
-      _for: null,
-      audio: null
-    },
-    {
-      url: "38",
-      hint: "This is hint for 38 🐶",
-      img: null,
-      key: null,
-      _for: null,
-      audio: null
-    },
+    // {
+    //   url: "32",
+    //   hint: "This is hint for 32 🐶",
+    //   img: null,
+    //   key: null,
+    //   _for: null,
+    //   audio: null
+    // },
+    // {
+    //   url: "33",
+    //   hint: "This is hint for 33 🐶",
+    //   img: null,
+    //   key: null,
+    //   _for: null,
+    //   audio: null
+    // },
+    // {
+    //   url: "34",
+    //   hint: "This is hint for 34 🐶",
+    //   img: null,
+    //   key: null,
+    //   _for: null,
+    //   audio: null
+    // },
+    // {
+    //   url: "35",
+    //   hint: "This is hint for 35 🐶",
+    //   img: null,
+    //   key: null,
+    //   _for: null,
+    //   audio: null
+    // },
+    // {
+    //   url: "36",
+    //   hint: "This is hint for 36 🐶",
+    //   img: null,
+    //   key: null,
+    //   _for: null,
+    //   audio: null
+    // },
+    // {
+    //   url: "37",
+    //   hint: "This is hint for 37 🐶",
+    //   img: null,
+    //   key: null,
+    //   _for: null,
+    //   audio: null
+    // },
+    // {
+    //   url: "38",
+    //   hint: "This is hint for 38 🐶",
+    //   img: null,
+    //   key: null,
+    //   _for: null,
+    //   audio: null
+    // },
     {
       url: "39",
       hint: "Congratulations!!! You've successfully completed treasure hunt. Now go to the Anchors and submit your all keys in sequence",
