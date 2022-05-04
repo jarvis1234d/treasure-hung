@@ -225,7 +225,7 @@ export const getServerSideProps = async(context) => {
     {
       url: "31",
       hint: null,
-      img: "images/lawn.jpg",
+      img: "/images/lawn.jpg",
       key: "'M'",
       _for: "Mu1, Mu2",
       audio: null
