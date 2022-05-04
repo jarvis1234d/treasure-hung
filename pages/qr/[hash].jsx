@@ -62,38 +62,38 @@ function qr({msg}) {
 export const getServerSideProps = async(context) => {
 
   const activeLinks = [
-    // {
-    //   url: "11",
-    //   hint: "Room ko dhoondo",
-    //   img: "/images/f116.jpeg",
-    //   key: "'M'",
-    //   _for: "alpha1, alpha2",
-    //   audio: null
-    // },
-    // {
-    //   url: "12",
-    //   hint: "S-128 ke samne hai khamba, khambe ka hi toh hai saara funda",
-    //   img: null,
-    //   key: "'E'",
-    //   _for: "alpha1, alpha2",
-    //   audio: null
-    // },
-    // {
-    //   url: "13",
-    //   hint: "Abhi seedha first floor pe jao, dhoondo waha hardware lab, jike side me chupa hai last clue ka rap.",
-    //   img: null,
-    //   key: "'V'",
-    //   _for: "alpha1, alpha2",
-    //   audio: null
-    // },
-    // {
-    //   url: "14",
-    //   hint: null,
-    //   img: null,
-    //   key: "'T'",
-    //   _for: "alpha1, alpha2",
-    //   audio: "/audio/sherayasher.wav"
-    // },
+    {
+      url: "11",
+      hint: "Room ko dhoondo",
+      img: "/images/f116.jpeg",
+      key: "'M'",
+      _for: "alpha1, alpha2",
+      audio: null
+    },
+    {
+      url: "12",
+      hint: "S-128 ke samne hai khamba, khambe ka hi toh hai saara funda",
+      img: null,
+      key: "'E'",
+      _for: "alpha1, alpha2",
+      audio: null
+    },
+    {
+      url: "13",
+      hint: "Abhi seedha first floor pe jao, dhoondo waha hardware lab, jike side me chupa hai last clue ka rap.",
+      img: null,
+      key: "'V'",
+      _for: "alpha1, alpha2",
+      audio: null
+    },
+    {
+      url: "14",
+      hint: null,
+      img: null,
+      key: "'T'",
+      _for: "alpha1, alpha2",
+      audio: "/audio/sherayasher.wav"
+    },
     // {
     //   url: "15",
     //   hint: "This is hint for 15 🐶",
