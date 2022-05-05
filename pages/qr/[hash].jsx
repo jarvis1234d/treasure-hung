@@ -64,166 +64,166 @@ function qr({msg}) {
 export const getServerSideProps = async(context) => {
 
   const activeLinks = [
-    // {
-      // url: "11",
-      // hint: "Room ko dhoondo",
-      // img: "/images/f116.jpg",
-      // key: "'M'",
-      // _for: "alpha1, alpha2",
-      // audio: null
-    // },
-    // {
-      // url: "12",
-      // hint: "S-128 ke samne hai khamba, khambe ka hi toh hai saara funda",
-      // img: null,
-      // key: "'E'",
-      // _for: "alpha1, alpha2",
-      // audio: null
-    // },
-    // {
-      // url: "13",
-      // hint: "Abhi seedha first floor pe jao, dhoondo waha hardware lab, jiske side me chupa hai last clue ka rap.",
-      // img: null,
-      // key: "'V'",
-      // _for: "alpha1, alpha2",
-      // audio: null
-    // },
-    // {
-      // url: "14",
-      // hint: null,
-      // img: null,
-      // key: "'T'",
-      // _for: "alpha1, alpha2",
-      // audio: "/audio/sherayasher.wav"
-    // },
-    // {
-      // url: "15",
-      // hint: "Dean office on second floor, O building",
-      // img: null,
-      // key: "'Y'",
-      // _for: "Beta1, Beta2",
-      // audio: null
-    // },
-    // {
-      // url: "16",
-      // hint: "Ha bhai aa gaye, ab jao S-126 ke sideme notice board ke niche dekhle, clue mila toh aage badhle",
-      // img: null,
-      // key: "'D'",
-      // _for: "Beta1, Beta2",
-      // audio: null
-    // },
-    // {
-      // url: "17",
-      // hint: "When its hot you come towards me, and get water bottles filled, I am permanent resident on first floor",
-      // img: null,
-      // key: "'V'",
-      // _for: "Beta1, Beta2",
-      // audio: null
-    // },
-    // {
-      // url: "18",
-      // hint: null,
-      // img: null,
-      // key: "'H'",
-      // _for: "Beta1, Beta2",
-      // audio: "/audio/sherayasher.wav"
-    // },
-    // {
-      // url: "19",
-      // hint: "MBA wali didi jo aapko roz dekhti hai (poster).",
-      // img: "/images/mba.jpg",
-      // key: "'V'",
-      // _for: "Gamma1, Gamma2",
-      // audio: null
-    // },
-    // {
-      // url: "20",
-      // hint: "Woh bhagta hai par chalta nahi, vo gata hai par bolta nahi, wo tower hai jiske do hath aur ek chehra par sar nahi. ",
-      // img: null,
-      // key: "'W'",
-      // _for: "Gamma1, Gamma2",
-      // audio: null
-    // },
-    // {
-      // url: "21",
-      // hint: "Wo fudakta hai lambi challang marta hai, real life mei yeh kida piddi sa hai par saala O building ke bahar itna bada kaise hai.",
-      // img: null,
-      // key: "'H'",
-      // _for: "Gamma1, Gamma2, Sigma1, Sigma2",
-      // audio: null
-    // },
-    // {
-      // url: "22",
-      // hint: null,
-      // img: null,
-      // key: "'H'",
-      // _for: "Gamma1, Gamma2, Sigma1, Sigma2",
-      // audio: "/audio/sherayasher.wav"
-    // },
-    // {
-      // url: "23",
-      // hint: null,
-      // img: "/images/f118.jpg",
-      // key: "'Z'",
-      // _for: "Delta1, Delta2",
-      // audio: null
-    // },
-    // {
-      // url: "24",
-      // hint: "O building reception par jao aur mam ko bolo 'Bad Morning'",
-      // img: null,
-      // key: "'E'",
-      // _for: "Delta1, Delta2",
-      // audio: null
-    // },
-    // {
-      // url: "25",
-      // hint: null,
-      // img: "/images/lawn.jpg",
-      // key: "'A'",
-      // _for: "Delta1, Delta2",
-      // audio: null
-    // },
-    // {
-      // url: "26",
-      // hint: null,
-      // img: null,
-      // key: "'V",
-      // _for: "Delta1, Delta2, Mu1, Mu2",
-      // audio: "/audio/sherayasher.wav"
-    // },
-    // {
-      // url: "27",
-      // hint: "Ek kaam karo, O building ground floor pe jake, Reception ki mam ko bolo 'May I help you Mam'",
-      // img: null,
-      // key: "'A'",
-      // _for: "Sigma1, Sigma2",
-      // audio: null
-    // },
-    // {
-      // url: "28",
-      // hint: "Woh bhagta hai par chalta nahi, vo gata hai par bolta nahi, wo tower hai jiske do hath aur ek chehra par sar nahi. ",
-      // img: null,
-      // key: "'F'",
-      // _for: "Sigma1, Sigma2",
-      // audio: null
-    // },
-    // {
-      // url: "29",
-      // hint: null,
-      // img: "/images/kaby.jpg",
-      // key: "'X'",
-      // _for: "Mu1, Mu2",
-      // audio: null
-    // },
-    // {
-      // url: "30",
-      // hint: "Ek kam karo O building ke reception par jakar mam ko bolo, 'Mam Bhuk lagi hai.'",
-      // img: null,
-      // key: "'W'",
-      // _for: "Mu1, Mu2",
-      // audio: null
-    // },
+    {
+      url: "11",
+      hint: "Room ko dhoondo",
+      img: "/images/f116.jpg",
+      key: "'M'",
+      _for: "alpha1, alpha2",
+      audio: null
+    },
+    {
+      url: "12",
+      hint: "S-128 ke samne hai khamba, khambe ka hi toh hai saara funda",
+      img: null,
+      key: "'E'",
+      _for: "alpha1, alpha2",
+      audio: null
+    },
+    {
+      url: "13",
+      hint: "Abhi seedha first floor pe jao, dhoondo waha hardware lab, jiske side me chupa hai last clue ka rap.",
+      img: null,
+      key: "'V'",
+      _for: "alpha1, alpha2",
+      audio: null
+    },
+    {
+      url: "14",
+      hint: null,
+      img: null,
+      key: "'T'",
+      _for: "alpha1, alpha2",
+      audio: "/audio/sherayasher.wav"
+    },
+    {
+      url: "15",
+      hint: "Dean office on second floor, O building",
+      img: null,
+      key: "'Y'",
+      _for: "Beta1, Beta2",
+      audio: null
+    },
+    {
+      url: "16",
+      hint: "Ha bhai aa gaye, ab jao S-126 ke sideme notice board ke niche dekhle, clue mila toh aage badhle",
+      img: null,
+      key: "'D'",
+      _for: "Beta1, Beta2",
+      audio: null
+    },
+    {
+      url: "17",
+      hint: "When its hot you come towards me, and get water bottles filled, I am permanent resident on first floor",
+      img: null,
+      key: "'V'",
+      _for: "Beta1, Beta2",
+      audio: null
+    },
+    {
+      url: "18",
+      hint: null,
+      img: null,
+      key: "'H'",
+      _for: "Beta1, Beta2",
+      audio: "/audio/sherayasher.wav"
+    },
+    {
+      url: "19",
+      hint: "MBA wali didi jo aapko roz dekhti hai (poster).",
+      img: "/images/mba.jpg",
+      key: "'V'",
+      _for: "Gamma1, Gamma2",
+      audio: null
+    },
+    {
+      url: "20",
+      hint: "Woh bhagta hai par chalta nahi, vo gata hai par bolta nahi, wo tower hai jiske do hath aur ek chehra par sar nahi. ",
+      img: null,
+      key: "'W'",
+      _for: "Gamma1, Gamma2",
+      audio: null
+    },
+    {
+      url: "21",
+      hint: "Wo fudakta hai lambi challang marta hai, real life mei yeh kida piddi sa hai par saala O building ke bahar itna bada kaise hai.",
+      img: null,
+      key: "'H'",
+      _for: "Gamma1, Gamma2, Sigma1, Sigma2",
+      audio: null
+    },
+    {
+      url: "22",
+      hint: null,
+      img: null,
+      key: "'H'",
+      _for: "Gamma1, Gamma2, Sigma1, Sigma2",
+      audio: "/audio/sherayasher.wav"
+    },
+    {
+      url: "23",
+      hint: null,
+      img: "/images/f118.jpg",
+      key: "'Z'",
+      _for: "Delta1, Delta2",
+      audio: null
+    },
+    {
+      url: "24",
+      hint: "O building reception par jao aur mam ko bolo 'Bad Morning'",
+      img: null,
+      key: "'E'",
+      _for: "Delta1, Delta2",
+      audio: null
+    },
+    {
+      url: "25",
+      hint: null,
+      img: "/images/lawn.jpg",
+      key: "'A'",
+      _for: "Delta1, Delta2",
+      audio: null
+    },
+    {
+      url: "26",
+      hint: null,
+      img: null,
+      key: "'V",
+      _for: "Delta1, Delta2, Mu1, Mu2",
+      audio: "/audio/sherayasher.wav"
+    },
+    {
+      url: "27",
+      hint: "Ek kaam karo, O building ground floor pe jake, Reception ki mam ko bolo 'May I help you Mam'",
+      img: null,
+      key: "'A'",
+      _for: "Sigma1, Sigma2",
+      audio: null
+    },
+    {
+      url: "28",
+      hint: "Woh bhagta hai par chalta nahi, vo gata hai par bolta nahi, wo tower hai jiske do hath aur ek chehra par sar nahi. ",
+      img: null,
+      key: "'F'",
+      _for: "Sigma1, Sigma2",
+      audio: null
+    },
+    {
+      url: "29",
+      hint: null,
+      img: "/images/kaby.jpg",
+      key: "'X'",
+      _for: "Mu1, Mu2",
+      audio: null
+    },
+    {
+      url: "30",
+      hint: "Ek kam karo O building ke reception par jakar mam ko bolo, 'Mam Bhuk lagi hai.'",
+      img: null,
+      key: "'W'",
+      _for: "Mu1, Mu2",
+      audio: null
+    },
     // {
       // url: "31",
       // hint: null,
@@ -288,14 +288,14 @@ export const getServerSideProps = async(context) => {
       // _for: null,
       // audio: null
     // },
-    // {
-    //   url: "39",
-    //   hint: "Congratulations!!! You've successfully completed treasure hunt. Now go to the Anchors and submit your all keys in sequence",
-    //   img: "/images/winner.gif",
-    //   key: "'C'",
-    //   _for: null,
-    //   audio: null
-    // },
+    {
+      url: "39",
+      hint: "Congratulations!!! You've successfully completed treasure hunt. Now go to the Anchors and submit your all keys in sequence",
+      img: "/images/winner.gif",
+      key: "'C'",
+      _for: null,
+      audio: null
+    },
     {
       url: "demo",
       hint: "This is Demo page",
