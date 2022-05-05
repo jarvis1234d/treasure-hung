@@ -8,7 +8,7 @@ function invalidQr() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="mr-2 ml-2">
-          <h1 className="text-center text-white text-xl font-extrabold">Ohh Stree Kal Ana!!! <br /> #Confidential</h1>
+          <h1 className="text-center text-white text-xl font-extrabold">Are didi aap galat qr par aa gaye</h1>
 
       </main>
       </div>
