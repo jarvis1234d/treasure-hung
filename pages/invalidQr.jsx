@@ -8,7 +8,7 @@ function invalidQr() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="mr-2 ml-2">
-          <h1 className="text-center text-white text-xl font-extrabold">The game is over. See you at Treasure Hunt 2.0 Next Year!!!!</h1>
+          <h1 className="text-center text-white text-xl font-extrabold">Invalid QR Code</h1>
 
       </main>
       </div>

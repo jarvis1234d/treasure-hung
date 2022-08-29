@@ -66,9 +66,9 @@ export const getServerSideProps = async(context) => {
   const activeLinks = [
     
     {
-      url: "demo",
+      url: "1",
       hint: "This is Demo page",
-      img: null,
+      img: "/images/Autumn-leaves.jpg",
       key: null,
       _for: null,
       audio: null
@@ -77,6 +77,7 @@ export const getServerSideProps = async(context) => {
   ]
 
     const {hash} = context.query;
+    console.log(hash);
     var msg ={
       url: null,
       hint: null,
@@ -84,9 +85,11 @@ export const getServerSideProps = async(context) => {
     };
     
     for(var i = 0; i < activeLinks.length; i++){
+      console.log(md5(activeLinks[i].url));
       if(md5(activeLinks[i].url) === hash){
         msg = activeLinks[i]
         msg.url = hash
+        console.log("In here")
         return {props: {msg}}
       }
     }
