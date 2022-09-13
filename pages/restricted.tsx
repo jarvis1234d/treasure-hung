@@ -17,6 +17,7 @@ function restricted() {
             }
         })
     },[])
+    console.log("1")
 
     return (
         <div>{msg}</div>
