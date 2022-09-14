@@ -138,7 +138,7 @@ function qr() {
           </div> */}
          
           <div className={`${/*loading && 'hidden'*/ ''} flex items-center mt-5  flex-col`}>
-            <p className="mt-5 ml-1 mr-1 text-center mb-2 text-white text-2xl font-extrabold">TREASURE HUNT</p>
+            <p className="mt-5 ml-1 mr-1 text-center mb-2 text-white text-2xl font-extrabold">TREASURE HUNT 2.0</p>
             {
               data.type === 'img' && <div className="pl-2  pr-2 w-full"> <Image className="rounded "  src={data.clue} width={100} height={100} priority={true} layout="responsive" objectFit="contain" /> </div>
             }
@@ -158,8 +158,8 @@ function qr() {
             
             } */}
              
-          <p className="mt-9 text-center text-white text-base font-bold ">For any technical issues contact:<br /> Tarun Suryawanshi - 8308873441</p>
-          <div className="pl-2  pr-2 w-[150px] bottom-0 -mb-5 "> <Image className=" "  src="/images/cs0.png" width={100} height={100} priority={true} layout="responsive" objectFit="cover" /> </div>
+          <p className="mt-9 text-center text-white text-base font-bold ">Organised by SOCSE, Sandip University<br />In collaboration with Cluster Club, SOCSE</p>
+          <div className="pl-2  pr-2 w-[150px] bottom-0 -mb-5 "> <Image className=" "  src="/images/sunlogo.png" width={100} height={100} priority={true} layout="responsive" objectFit="cover" /> </div>
           
           </div>
           
