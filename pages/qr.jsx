@@ -17,7 +17,8 @@ import { query } from "firebase/firestore";
 const fetchData = async (token, index, hash) => {
   const MyHeaders = new Headers();
   MyHeaders.append('authorization', token)
-
+// https://treasure-hunt007.herokuapp.com
+// http://localhost:3000
   const res = await fetch(`https://treasure-hunt007.herokuapp.com/api/firebase?index=${index}&hash=${hash}`,{
     method: 'GET',
     headers: MyHeaders
@@ -85,11 +86,13 @@ function qr() {
                     ...data,
                     ...updatedData
                   }))
-
+                  console.log(res)
                   if(res.reason === 'too_early'){
                     router.push('/timer')
                   }else if(res.reason === 'qr_missed'){
                     router.push('/qrmissed')
+                  }else if(res.response === 'unauthorised_qr'){
+                    router.push('/unauthorised')
                   }
                   
                 }).catch((error)=>{
