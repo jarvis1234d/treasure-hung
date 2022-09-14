@@ -1,6 +1,6 @@
 import Head from "next/head"
 
-function invalidQr() {
+function unauthorised() {
   return (
     <div className="flex bg-red-500 min-h-screen flex-col items-center justify-center py-2">
       <Head>
@@ -15,4 +15,4 @@ function invalidQr() {
   )
 }
 
-export default invalidQr
+export default unauthorised
