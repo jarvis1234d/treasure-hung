@@ -18,7 +18,7 @@ const fetchData = async (token, index, hash) => {
   const MyHeaders = new Headers();
   MyHeaders.append('authorization', token)
 
-  const res = await fetch(`http://localhost:3000/api/firebase?index=${index}&hash=${hash}`,{
+  const res = await fetch(`https://treasure-hunt007.herokuapp.com/api/firebase?index=${index}&hash=${hash}`,{
     method: 'GET',
     headers: MyHeaders
   })
