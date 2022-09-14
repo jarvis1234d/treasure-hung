@@ -12,44 +12,44 @@ function authenticate() {
   const [isLoggedIn, setIsLoggedIn] = useState(false)
 
 
-  const updateDisplayName = async() => {
-    const user = auth.currentUser;
-    if(user){
-      updateProfile(user, {displayName: displayName}).catch((error)=>{console.log(error)})
-        const newToken = await user.getIdToken(true);
-        console.log(newToken);
-    }else{
-      console.log("No authentication found")
-    }
-  }
+  // const updateDisplayName = async() => {
+  //   const user = auth.currentUser;
+  //   if(user){
+  //     updateProfile(user, {displayName: displayName}).catch((error)=>{console.log(error)})
+  //       const newToken = await user.getIdToken(true);
+  //       console.log(newToken);
+  //   }else{
+  //     console.log("No authentication found")
+  //   }
+  // }
 
-  const signUp = ()=>{
+  // const signUp = ()=>{
 
-    createUserWithEmailAndPassword(auth, email, password).then(
-      async (userCredential) => {
-        setErr('');
+  //   createUserWithEmailAndPassword(auth, email, password).then(
+  //     async (userCredential) => {
+  //       setErr('');
         
-        const user = userCredential.user;
+  //       const user = userCredential.user;
        
-        if(user){
-          setIsLoggedIn(true);
-        }
-        updateProfile(user, {displayName: displayName}).catch((error)=>{console.log(error)})
-        const newToken = await user.getIdToken(true);
-        // console.log(newToken);
+  //       if(user){
+  //         setIsLoggedIn(true);
+  //       }
+  //       updateProfile(user, {displayName: displayName}).catch((error)=>{console.log(error)})
+  //       const newToken = await user.getIdToken(true);
+  //       // console.log(newToken);
         
 
-      }
-    ).catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      setErr(errorCode);
+  //     }
+  //   ).catch((error) => {
+  //     const errorCode = error.code;
+  //     const errorMessage = error.message;
+  //     setErr(errorCode);
       
 
-    })
+  //   })
 
-    // window.location.reload();
-  }
+  //   // window.location.reload();
+  // }
 
   const signIn = () => {
     signInWithEmailAndPassword(auth, email, password).then(
@@ -106,12 +106,12 @@ function authenticate() {
           <input onChange={(e) => {setPassword(e.target.value)}} value={password} className="border border-solid border-indigo-500 rounded-md" id="password" type="password" name="pass" />
         </div>
         <br />
-        <div className="flex items-center flex-col">
+        {/* <div className="flex items-center flex-col">
           <label htmlFor="displayName" >Team Name</label>
           <input onChange={(e) => {setDisplayName(e.target.value)}} value={displayName} className="border border-solid border-indigo-500 rounded-md" id="displayName" type="dispalyName" name="pass" />
-        </div>
+        </div> */}
         <div className="flex items-center flex-col ">
-          <button onClick={signUp} className="mt-5 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">SignUp</button>
+          {/* <button onClick={signUp} className="mt-5 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">SignUp</button> */}
           <button onClick={signIn} className="mt-5 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Login</button>
         </div>
         <div>
@@ -125,7 +125,7 @@ function authenticate() {
         <br />
         <br />
         <div className="flex items-center flex-col ">
-        <button onClick={updateDisplayName} className="mt-5 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Update Team Name</button>
+        {/* <button onClick={updateDisplayName} className="mt-5 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Update Team Name</button> */}
           <button onClick={logOut} className="mt-5 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Logout</button>
         </div>
       </div>
